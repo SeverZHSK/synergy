@@ -3,7 +3,6 @@ import time
 
 
 def get_positive_integer(prompt: str = "Введите положительное целое число: ") -> int:
-   
     while True:
         raw_value = input(prompt).strip()
         try:
@@ -23,7 +22,6 @@ def get_positive_integer(prompt: str = "Введите положительно�
 
 
 def factorial_manual(n: int) -> int:
-   
     result = 1
     for i in range(2, n + 1):
         result *= i
@@ -31,12 +29,10 @@ def factorial_manual(n: int) -> int:
 
 
 def factorial_optimized(n: int) -> int:
-    
     return math.factorial(n)
 
 
 def compare_performance(n: int) -> None:
-    """Сравнивает время выполнения ручной и оптимизированной реализаций."""
     start = time.perf_counter()
     manual_result = factorial_manual(n)
     manual_time = time.perf_counter() - start
@@ -60,8 +56,6 @@ def main() -> None:
 
     result = factorial_optimized(n)
 
-    # Для очень больших чисел не печатаем результат целиком, чтобы не
-    # засорять консоль десятками тысяч цифр, а показываем длину числа.
     digits = len(str(result))
     if digits <= 50:
         print(f"\n{n}! = {result}")
