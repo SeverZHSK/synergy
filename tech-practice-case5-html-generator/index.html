@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Университет «Синергия»</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Roboto:wght@400;700&amp;family=Open+Sans:wght@400;700&amp;family=PT+Sans:wght@400;700&amp;family=Inter:wght@400;700&amp;family=Golos+Text:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+  :root {
+    --font-current: "Montserrat", sans-serif;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --accent: #c8102e;
+    --muted: #6b6b6b;
+    --border: #e4e4e4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15161a;
+      --fg: #f1f1f1;
+      --muted: #a3a3a3;
+      --border: #30323a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15161a;
+    --fg: #f1f1f1;
+    --muted: #a3a3a3;
+    --border: #30323a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px max(16px, (100% - 760px) / 2);
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-current);
+    line-height: 1.55;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin: 0 0 4px;
+    color: var(--accent);
+  }
+  .subtitle {
+    color: var(--muted);
+    margin: 0 0 24px;
+    font-size: 0.95rem;
+  }
+  .font-picker {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 28px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  .font-picker label { font-size: 0.9rem; color: var(--muted); }
+  .font-picker select {
+    font: inherit;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--fg);
+  }
+  .font-note {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-top: -18px;
+    margin-bottom: 24px;
+  }
+  p { margin: 0 0 14px; }
+  ul { padding-left: 20px; }
+  footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <h1>Университет «Синергия»</h1>
+  <p class="subtitle">Наименование организации, на базе которой проходит практическая подготовка</p>
+
+  <div class="font-picker">
+    <label for="font-select">Шрифт:</label>
+    <select id="font-select">
+      <option value="Montserrat" selected>Montserrat (по умолчанию)</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Open Sans">Open Sans</option>
+        <option value="PT Sans">PT Sans</option>
+        <option value="Inter">Inter</option>
+        <option value="Golos Text">Golos Text</option>
+    </select>
+  </div>
+  <p class="font-note">Шрифт «Montserrat» использован как предполагаемый — официальный фирменный шрифт компании в открытых источниках не найден; здесь — предполагаемый вариант, замените на реальный при наличии брендбука. Переключатель выше показывает ещё 5 вариантов.</p>
+
+  <main>
+      <p>Полное официальное название — Автономная некоммерческая организация высшего образования «Московский университет «Синергия»; сокращённое — Университет «Синергия». Организационно-правовая форма — автономная некоммерческая организация (АНО). Университет входит в Корпорацию «Синергия» — EdTech-холдинг, объединяющий более 50 компаний в сфере образования, digital-маркетинга, event-менеджмента и смежных направлений.</p>
+      <p>Основные услуги: высшее образование (бакалавриат, магистратура), среднее профессиональное образование (колледж), дополнительное профессиональное образование и переподготовка, MBA-программы (Школа Бизнеса «Синергия»), корпоративное обучение — всего более 1000 образовательных программ.</p>
+      <p>Территориальное размещение: головной офис и приёмные комиссии в Москве (Сокол, Семёновская, Охотный ряд, ВДНХ); представительства в регионах России (в т.ч. Санкт-Петербург, Екатеринбург, Уфа, Сыктывкар) и за рубежом (в т.ч. Ош); зарубежный кампус бизнес-школы в Дубае; программы двойного диплома с партнёрами в Сербии и Китае.</p>
+      <p>Факультет, на базе которого выполняется индивидуальное задание — факультет информационных технологий.</p>
+  </main>
+
+  <footer>
+    <p>Источники:</p>
+    <ul>
+        <li><a href="https://synergy.ru/about/branches/osh" target="_blank" rel="noopener">synergy.ru — приёмная комиссия (Ош)</a></li>
+        <li><a href="https://www.corporation.synergy.ru/" target="_blank" rel="noopener">corporation.synergy.ru — о корпорации</a></li>
+        <li><a href="https://www.corporation.synergy.ru/structure" target="_blank" rel="noopener">corporation.synergy.ru — структура</a></li>
+    </ul>
+  </footer>
+
+<script>
+  document.getElementById('font-select').addEventListener('change', function (e) {
+    document.documentElement.style.setProperty('--font-current', '"' + e.target.value + '", sans-serif');
+  });
+</script>
+</body>
+</html>
